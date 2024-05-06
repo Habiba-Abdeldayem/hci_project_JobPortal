@@ -41,8 +41,4 @@ export class SignupComponent {
   }
 
 
-  register(email: string, password: string): void {
-    const userType = this.signUpForm.get('isCompany')?.value ? 'company' : 'individual';
 
-  }
-}
