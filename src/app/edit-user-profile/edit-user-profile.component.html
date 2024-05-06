@@ -1,0 +1,49 @@
+<div class="user-profile-container">
+    <h2>Hello <span>{{ userName }}</span>!</h2>
+    
+    <form (submit)="saveProfile()">
+      <div class="personal-info">
+        <h3>Personal Info</h3>
+        <div class="personal-info-details">
+          <div class="info-item">
+            <label for="name" class="info-label">Name:</label>
+            <input type="text" id="name" [(ngModel)]="userName" name="name" class="info-value">
+          </div>
+          <div class="info-item">
+            <label for="age" class="info-label">Age:</label>
+            <input type="number" id="age" [(ngModel)]="userAge" name="age" class="info-value">
+          </div>
+          <!-- Add input fields for other personal info -->
+        </div>
+        <div class="user-photo-container">
+          <img class="user-photo" src="{{ userPhotoUrl }}" alt="User Photo">
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <div class="info-item">
+          <label for="email" class="info-label">Email:</label>
+          <input type="email" id="email" [(ngModel)]="userEmail" name="email" class="info-value">
+        </div>
+        <div class="info-item">
+          <label for="phone" class="info-label">Phone Number:</label>
+          <input type="tel" id="phone" [(ngModel)]="userPhoneNumber" name="phone" class="info-value">
+        </div>
+      </div>
+
+      <div class="educational-info">
+        <h3>Educational Info</h3>
+        <div class="info-item">
+          <label for="department" class="info-label">Department:</label>
+          <input type="text" id="department" [(ngModel)]="userDepartment" name="department" class="info-value">
+        </div>
+        <div class="info-item">
+          <label for="interests" class="info-label">Interested In:</label>
+          <input type="text" id="interests" [(ngModel)]="userInterests" name="interests" class="info-value">
+        </div>
+      </div>
+      
+      <button type="submit">Save</button>
+    </form>
+  </div>

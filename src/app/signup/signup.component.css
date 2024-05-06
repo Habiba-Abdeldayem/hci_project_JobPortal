@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-.login-container input:not([type="checkbox"]){
+ input:not([type="checkbox"]) {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -74,7 +74,6 @@ button:disabled {
   pointer-events: none;
   opacity: 0.5;
 }
-
 .checkbox-container {
   display: flex;
   align-items: center; /* Align items vertically */
